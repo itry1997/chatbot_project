@@ -1,5 +1,6 @@
 package cn.bugstack.chatbot.api.test;
 
+import cn.bugstack.chatbot.api.domain.ai.IOpenAI;
 import cn.bugstack.chatbot.api.domain.zsxq.IZsxqApi;
 import cn.bugstack.chatbot.api.domain.zsxq.model.aggregates.UnansweredQuestionsAggregates;
 import cn.bugstack.chatbot.api.domain.zsxq.model.vo.Topics;
@@ -35,6 +36,9 @@ public class SpringBootRunTest {
     @Resource
     private IZsxqApi zsxqApi;
 
+    @Resource
+    private IOpenAI openAI;
+
     @Test
     public void testZsxqApi() throws IOException{
         UnansweredQuestionsAggregates unansweredQuestionsAggregates = zsxqApi.queryUnansweredQuestionsTopicId(groupId, cookie);
@@ -48,7 +52,13 @@ public class SpringBootRunTest {
 
             // 回答问题
             // text就是答案
-            zsxqApi.answer(groupId,cookie,topicId,text,true);
+//            zsxqApi.answer(groupId,cookie,topicId,text,true);
         }
+    }
+
+    @Test
+    public void test_openAI() throws IOException{
+        String response = openAI.doChatGPT("介绍一下济南");
+        logger.info("测试结果: {}",response);
     }
 }

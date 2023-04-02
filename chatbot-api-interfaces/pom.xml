@@ -80,10 +80,15 @@
         </dependency>
         <dependency>
             <groupId>cn.bugstack.ai</groupId>
-            <artifactId>chatbot-api-domain</artifactId>
+            <artifactId>chatbot-api-application</artifactId>
             <version>1.0-SNAPSHOT</version>
-            <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>cn.bugstack.ai</groupId>
+            <artifactId>chatbot-api-infrastructure</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
     </dependencies>
 
 </project>

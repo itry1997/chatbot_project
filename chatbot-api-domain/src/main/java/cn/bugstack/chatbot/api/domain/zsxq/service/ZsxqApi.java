@@ -56,7 +56,7 @@ public class ZsxqApi implements IZsxqApi {
     public boolean answer(String groupId, String cookie, String topicId, String text, boolean silenced) throws IOException {
         CloseableHttpClient httpClient = HttpClientBuilder.create().build();
         // uri中的数字是 要回答的unanswered_questions的topic_id
-        HttpPost post = new HttpPost("https://api.zsxq.com/v2/topics/" + topicId + "181455442428452/answer");
+        HttpPost post = new HttpPost("https://api.zsxq.com/v2/topics/" + topicId + "/answer");
         post.addHeader("cookie",cookie);
         post.addHeader("Content-Type","application/json; charset=UTF-8");
         post.addHeader("user-agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.54");
