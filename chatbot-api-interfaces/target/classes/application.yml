@@ -4,4 +4,4 @@ server:
 chatbot-api:
   groupId: 28885822144141
   cookie: __cuid=93e78872cbf94b94af3c4ed2b184d4cd; amp_fef1e8=e2b14c3b-213c-4c30-aa8b-90a985b81a09R...1gsqm3dar.1gsqm4qkd.2.1.3; zsxq_access_token=B227DD67-B121-FD77-FB66-6CAFDA78AD50_5B727D7E22D63632; abtest_env=product; zsxqsessionid=be28da9c61d55b0bc3b4cf4f418c6a8d; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%221873563883fd25-0c038b445d065d-7a545471-1327104-18735638840a7d%22%2C%22first_id%22%3A%22%22%2C%22props%22%3A%7B%7D%2C%22%24device_id%22%3A%221873563883fd25-0c038b445d065d-7a545471-1327104-18735638840a7d%22%7D; sajssdk_2015_cross_new_user=1
-  openAIKey: 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
+  openAIKey: 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

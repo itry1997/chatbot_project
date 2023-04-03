@@ -59,6 +59,6 @@ public class SpringBootRunTest {
     @Test
     public void test_openAI() throws IOException{
         String response = openAI.doChatGPT("介绍一下济南");
-        logger.info("测试结果: {}",response);
+        logger.info("回答结果: {}",response);
     }
 }

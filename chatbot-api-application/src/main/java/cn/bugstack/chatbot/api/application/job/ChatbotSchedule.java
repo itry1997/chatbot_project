@@ -41,7 +41,9 @@ public class ChatbotSchedule {
     @Resource
     private IOpenAI openAI;
 
-    @Scheduled(cron = "0/30 * * * * ?")
+    // 每5min "0 0/5 * * * ? "
+    // 每30s 0/30 * * * * ?
+    @Scheduled(cron = "0 0/5 * * * ?")
     public void run(){
         try {
             // 0、避免被风控
