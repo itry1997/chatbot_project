@@ -5,3 +5,6 @@ ChatGPT AI 问答助手
 实现docker部署
 
 ## 项目运行截图
+![image](https://github.com/itry1997/chatbot_project/blob/master/zsxq.png)
+![image](https://github.com/itry1997/chatbot_project/blob/master/docker.png)
+![image](https://github.com/itry1997/chatbot_project/blob/master/docker2.png)
